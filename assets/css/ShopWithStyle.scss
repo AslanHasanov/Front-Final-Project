@@ -9,6 +9,26 @@
     }
 }
 
+
+@media (max-width:576px) {
+    .nav-m{
+        display: none !important;
+    }
+    .slick-prev{
+        left: 5% !important;
+        z-index: 2;
+    }
+    .slick-next{
+        left: 90% !important;
+    }
+    
+}
+
+
+
+
+
+
 header {
 
     #search {
@@ -65,3 +85,4 @@ header {
         }
     }
 }
+

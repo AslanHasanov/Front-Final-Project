@@ -33,3 +33,20 @@ $('.reklam').slick({
     // instead of a settings object
   ]
 });
+
+var menu=document.querySelector("#bars")
+var slidebar=document.querySelector("#slidebar")
+var exit=document.querySelector('#bars-exit')
+
+exit.addEventListener("click",function(){
+  slidebar.style.width="0%"
+})
+
+menu.addEventListener("click",function (){
+    if(slidebar.style.width==="70%"){
+        slidebar.style.width="0%"
+    }
+    else{
+        slidebar.style.width="70%"
+    }
+})
