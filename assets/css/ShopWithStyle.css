@@ -245,4 +245,234 @@ header #searchicon {
 #Shop .products {
   padding-left: 15px;
   padding-right: 15px;
+}
+#Shop .sorts .sort {
+  border-bottom: 1px solid #4B9CF3;
+}
+#Shop .sorts .sort h6 {
+  font-size: 22px;
+  font-weight: 500;
+}
+#Shop .sorts .sort i {
+  cursor: pointer;
+}
+#Shop .sorts .sort-content li {
+  margin-bottom: 10px;
+  list-style: none;
+  font-size: 16px;
+  opacity: 0.8;
+}
+#Shop .sorts .sort-content li .radio {
+  margin-right: 8px;
+}
+#Shop .sorts .sort-content .colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+#Shop .sorts .sort-content .colors .color {
+  margin: 0 8px 8px 0;
+  height: 30px;
+  width: 30px;
+  line-height: 32px;
+  border-radius: 50%;
+}
+#Shop .sorts .sort-content .colors .color a {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #906145;
+}
+#Shop .sorts .sort-content .sizes li {
+  display: inline-block;
+  margin: 0 5px 10px 0;
+}
+#Shop .sorts .sort-content .sizes li a {
+  border: 2px solid #f6f7fb;
+  background: #fff;
+  padding: 5px 13px;
+  border-radius: 30px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: var(--font-size-b2);
+  color: var(--color-body);
+  border-radius: 50%;
+}
+#Shop .sorts .sort-content .range {
+  /* Functional styling;
+   * These styles are required for noUiSlider to function.
+   * You don't need to change these rules to apply your design.
+   */
+  /* Painting and performance;
+   * Browsers can paint handles in their own layer.
+   */
+  /* Slider size and handle placement;
+   */
+  /* Styling;
+   */
+  /* Handles and cursors;
+   */
+  /* Disabled state;
+   */
+}
+#Shop .sorts .sort-content .range .container {
+  margin-top: 1px;
+}
+#Shop .sorts .sort-content .range .slider-labels {
+  margin-top: 10px;
+}
+#Shop .sorts .sort-content .range .noUi-target, #Shop .sorts .sort-content .range .noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+#Shop .sorts .sort-content .range .noUi-target {
+  position: relative;
+  direction: ltr;
+}
+#Shop .sorts .sort-content .range .noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* Fix 401 */
+}
+#Shop .sorts .sort-content .range .noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+#Shop .sorts .sort-content .range .noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+#Shop .sorts .sort-content .range .noUi-stacking .noUi-handle {
+  /* This class is applied to the lower origin when
+     its values is > 50%. */
+  z-index: 10;
+}
+#Shop .sorts .sort-content .range .noUi-state-tap .noUi-origin {
+  transition: left 0.3s, top 0.3s;
+}
+#Shop .sorts .sort-content .range .noUi-state-drag * {
+  cursor: inherit !important;
+}
+#Shop .sorts .sort-content .range .noUi-base, #Shop .sorts .sort-content .range .noUi-handle {
+  transform: translate3d(0, 0, 0);
+}
+#Shop .sorts .sort-content .range .noUi-horizontal {
+  height: 4px;
+}
+#Shop .sorts .sort-content .range .noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: -7px;
+  top: -7px;
+  background-color: #345DBB;
+}
+#Shop .sorts .sort-content .range .noUi-background {
+  background: #D6D7D9;
+}
+#Shop .sorts .sort-content .range .noUi-connect {
+  background: #345DBB;
+  transition: background 450ms;
+}
+#Shop .sorts .sort-content .range .noUi-origin {
+  border-radius: 2px;
+}
+#Shop .sorts .sort-content .range .noUi-target {
+  border-radius: 2px;
+}
+#Shop .sorts .sort-content .range .noUi-draggable {
+  cursor: w-resize;
+}
+#Shop .sorts .sort-content .range .noUi-vertical .noUi-draggable {
+  cursor: n-resize;
+}
+#Shop .sorts .sort-content .range .noUi-handle {
+  cursor: default;
+  box-sizing: content-box !important;
+}
+#Shop .sorts .sort-content .range .noUi-handle:active {
+  border: 8px solid #345DBB;
+  border: 8px solid rgba(53, 93, 187, 0.38);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px;
+}
+#Shop .sorts .sort-content .range [disabled].noUi-connect, #Shop .sorts .sort-content .range [disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+#Shop .sorts .sort-content .range [disabled].noUi-origin, #Shop .sorts .sort-content .range [disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+#Shop .sorts .btn-reset {
+  margin-top: 30px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: 700;
+  padding: 16px 115px;
+  display: inline-block;
+  transition: 0.5s;
+}
+#Shop .sorts .btn-reset:hover {
+  transform: scale(1.1);
+}
+
+.etrade {
+  background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-5.jpg) !important;
+}
+
+#button2 {
+  display: inline-block;
+  background-color: #3577F0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button2::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button2:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button2:active {
+  background-color: #555;
+}
+
+#button2.show {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=ShopWithStyle.css.map */

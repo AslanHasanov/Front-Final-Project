@@ -2267,8 +2267,8 @@ header {
       /* Styles for the content section */
       
       .content {
-        width: 77%;
-        margin: 50px auto;
+        width: 77% !important;
+        
         font-family: 'Merriweather', serif;
         font-size: 17px;
         color: #6c767a;
