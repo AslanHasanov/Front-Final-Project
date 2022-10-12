@@ -1,0 +1,23 @@
+header .head-sign {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+header .head-sign p {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: #292930;
+  font-weight: 500;
+}
+header .head-sign .sign-btn {
+  border: none;
+  padding: 15px 35px;
+  margin-left: 40px;
+  border-radius: 5px;
+  background-color: #FF497C;
+  color: white;
+  transition: 0.5s;
+}
+header .head-sign .sign-btn:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=Login.css.map */
