@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+
+header #search {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  font-size: 14px;
+  padding-left: 50px;
+  color: var(--color-heading);
+  font-weight: 500;
+  cursor: text;
+  opacity: 0.5;
+  height: 40px;
+  padding: 0 15px;
+  line-height: normal;
+  outline: none;
+  padding-left: 41px;
+}
+header .axil-search {
+  position: relative;
+}
+header #searchicon {
+  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  color: var(--color-heading);
+  z-index: 1;
+  outline: none;
+  cursor: pointer;
+  background: var(--color-lighter);
+  border: 1px solid var(--color-border);
+  transition: all 0.4s ease-out 0s;
+}
+
+#reklam {
+  background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/others/campaign-bg3.png);
+}
+#reklam .slick-prev {
+  left: 32%;
+  z-index: 2;
+}
+#reklam .slick-next {
+  left: 68%;
+}
+#reklam .reklam div {
+  color: white;
+}/*# sourceMappingURL=ShopWithStyle.css.map */
