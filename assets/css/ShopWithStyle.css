@@ -22,6 +22,15 @@
   .ex-foto {
     display: none;
   }
+  .single-select {
+    width: 90% !important;
+  }
+  .filter {
+    display: block !important;
+  }
+  .usage {
+    display: none;
+  }
 }
 header #search {
   width: 100%;
@@ -113,4 +122,127 @@ header #searchicon {
   text-align: right;
   position: relative;
   z-index: 1;
+}
+
+#Shop .select-category {
+  flex-wrap: wrap;
+  margin: -10px;
+}
+#Shop .results-filter {
+  margin: 10px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+#Shop .single-select {
+  margin: 10px;
+  width: 23%;
+  background-position-x: 95%;
+  font-size: 16px;
+  padding-right: 43px;
+  font-weight: 500;
+  transition: 0.3s;
+  border: 2px solid #dadada;
+  cursor: pointer;
+  border-radius: 6px;
+  height: 55px;
+  padding: 0 30px;
+  outline: none;
+}
+#Shop .card {
+  margin: 0 20px;
+}
+#Shop .card .photo {
+  overflow: hidden;
+  position: relative;
+}
+#Shop .card .photo .card-action {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  justify-content: center;
+  bottom: 0px;
+  visibility: hidden;
+  opacity: 0;
+  left: px;
+}
+#Shop .card .photo .card-action li {
+  list-style: none;
+}
+#Shop .card .photo .card-action li .add {
+  color: #fff;
+  background-color: rgba(255, 34, 71, 0.808);
+}
+#Shop .card .photo .card-action li a {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 12px;
+  background-color: white;
+  margin: 0 3px;
+}
+#Shop .card img {
+  transition: 0.5s;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#Shop .card {
+  border: none;
+  transition: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+#Shop .card:hover img {
+  transform: scale(1.1);
+}
+#Shop .card:hover .card-action {
+  visibility: visible;
+  opacity: 1;
+  bottom: 31px;
+}
+#Shop a {
+  transition: 0.7s;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(41, 41, 48, 0.6549019608);
+}
+#Shop .badget-product {
+  line-height: 1;
+  background-color: #3577F0;
+  padding: 6px 10px 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 8px 16px 0 rgba(53, 119, 240, 0.3);
+  border-radius: 4px;
+}
+#Shop .label-right {
+  left: auto;
+  right: -10px;
+  position: absolute;
+  top: 24px;
+}
+#Shop .price {
+  font-size: 20px;
+}
+#Shop .old-price {
+  text-decoration: line-through;
+  color: #d6d6d6;
+  margin-left: 0;
+}
+#Shop .current-price {
+  margin: 4px;
+  color: rgba(41, 41, 48, 0.8470588235);
+  font-weight: 700;
+  font-size: 20px;
+}
+#Shop .btn:hover {
+  transform: scale(1.1);
+  background-color: #d4d4d4;
+  border: none;
+}
+#Shop .products {
+  padding-left: 15px;
+  padding-right: 15px;
 }/*# sourceMappingURL=ShopWithStyle.css.map */
