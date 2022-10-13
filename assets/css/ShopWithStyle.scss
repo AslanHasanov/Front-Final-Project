@@ -352,19 +352,18 @@ header {
                 display: inline-block;
                 margin: 0 5px 10px 0;
                 a{
-                    border: 2px solid #f6f7fb;
                     background: #fff;
+                    border: 2px solid #f6f7fb;
                     padding: 5px 13px;
-                    border-radius: 30px;
                     min-width: 44px;
+                    border-radius: 30px;
                     min-height: 44px;
-                    display: flex;
                     align-items: center;
+                    display: flex;
                     justify-content: center;
-                    text-transform: uppercase;
                     font-weight: 500;
-                    font-size: var(--font-size-b2);
-                    color: var(--color-body);
+                    text-transform: uppercase;
+                
                     border-radius: 50%;
                 }
             }

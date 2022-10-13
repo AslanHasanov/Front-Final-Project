@@ -1,0 +1,238 @@
+@media (max-width: 576px) {
+  .add-card {
+    display: unset !important;
+  }
+  .btn-heart {
+    padding: 10px 10px !important;
+  }
+  .btn-addcard {
+    padding: 10px 10px !important;
+  }
+  .slick-next {
+    left: 84% !important;
+  }
+}
+.contents-pr {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25px;
+}
+
+#button4 {
+  display: inline-block;
+  background-color: #3577F0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button4::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button4:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button4:active {
+  background-color: #555;
+}
+
+#button4.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Pro {
+  background-color: #F9F3F0;
+}
+#Pro .right {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25px;
+}
+#Pro li {
+  list-style: none;
+}
+
+.contents-pr h2 {
+  margin-bottom: 18px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.contents-pr .price {
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+.contents-pr .stars {
+  padding: 18px 0;
+}
+.contents-pr .stars span {
+  opacity: 0.9;
+}
+.contents-pr .checks li {
+  color: #3D7DF0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.contents-pr .ornare {
+  opacity: 0.8;
+}
+.contents-pr .select-color h6 {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+.contents-pr .colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contents-pr .colors .color {
+  margin: 0 8px 8px 0;
+  height: 30px;
+  width: 30px;
+  line-height: 32px;
+  border-radius: 50%;
+}
+.contents-pr .colors .color a {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+.contents-pr .size h6 {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+.contents-pr .size li {
+  display: inline-block;
+  margin: 0 5px 10px 0;
+}
+.contents-pr .size li a {
+  background: #fff;
+  border: 2px solid #f6f7fb;
+  padding: 5px 13px;
+  min-width: 44px;
+  border-radius: 30px;
+  min-height: 44px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.8;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.contents-pr .quantity .quantity-input {
+  width: 28px;
+  text-align: center;
+  border: none;
+  height: 34px;
+  border-radius: 50%;
+  min-width: 34px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contents-pr .quantity .minus {
+  padding: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.contents-pr .quantity .minus .plus {
+  padding: 15px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.contents-pr .btn-heart {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.277);
+  color: rgba(0, 0, 0, 0.277);
+  font-weight: 700;
+  padding: 16px 20px;
+  margin-left: 15px;
+  display: inline-block;
+  transition: 0.5s;
+  background-color: #F9F3F0;
+}
+.contents-pr .btn-heart:hover {
+  transform: scale(1.1);
+}
+.contents-pr .btn-addcard {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: white;
+  font-weight: 700;
+  padding: 16px 110px;
+  display: inline-block;
+  transition: 0.5s;
+  background-color: #3577F0;
+}
+.contents-pr .btn-addcard:hover {
+  transform: scale(1.1);
+}
+.contents-pr .description p {
+  opacity: 0.8;
+}
+.contents-pr .icons li {
+  font-size: 20px;
+}
+.contents-pr .icons .icon {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+}
+.contents-pr .icons .icon img {
+  max-width: 30px;
+}
+
+.slider1 .slick-prev {
+  top: -52px;
+  color: #B0B1B3;
+  left: 1157px;
+  background-color: #c4c5c7;
+  width: 50px;
+  height: 50px;
+}
+.slider1 .slick-next {
+  position: absolute;
+  top: -52px;
+  color: black;
+  background-color: #c4c5c7;
+  width: 50px;
+  height: 50px;
+  right: 35px;
+  z-index: 1;
+}/*# sourceMappingURL=product.css.map */
