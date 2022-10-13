@@ -5,6 +5,12 @@ iframe{
     
 }
 
+header{
+    position: sticky;
+    z-index: 9;
+    top: 0;
+    background-color: #fff;
+}
 
 #Contact{
   h3{

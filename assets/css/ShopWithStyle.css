@@ -8,6 +8,14 @@
   text-decoration: none;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9;
+  top: 0;
+  background-color: #fff;
+}
+
 @media (max-width: 576px) {
   .nav-m {
     display: none !important;

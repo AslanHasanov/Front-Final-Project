@@ -1,0 +1,105 @@
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9;
+  top: 0;
+  background-color: #fff;
+}
+
+#Your-card .table thead {
+  background-color: #F6F7FB;
+}
+#Your-card .table thead tr .title {
+  padding: 18px 15px !important;
+}
+#Your-card .table thead tr th {
+  font-size: 20px;
+  padding: 18px 15px;
+  font-weight: 500;
+}
+#Your-card .table tbody {
+  align-items: center;
+}
+#Your-card .table tbody i {
+  cursor: pointer;
+}
+#Your-card .table tbody td {
+  padding-top: 30px;
+}
+#Your-card .table tbody .photo {
+  padding: 0 !important;
+}
+#Your-card .table tbody .photo img {
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#Your-card .table tbody .quantity-input {
+  width: 28px;
+  text-align: center;
+  border: 1px solid black;
+  height: 32px;
+  border-radius: 50%;
+  min-width: 35px;
+  background-color: rgba(243, 243, 243, 0.738);
+  font-size: 20px;
+  font-weight: 500;
+}
+#Your-card .cupon input {
+  width: 100%;
+  padding: 0;
+  border-bottom: 2px solid #efefef !important;
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+#Your-card .btn-apply {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: black;
+  font-weight: 700;
+  padding: 16px 40px;
+  display: inline-block;
+  transition: 0.5s;
+}
+#Your-card .btn-apply:hover {
+  transform: scale(1.1);
+  background-color: #3577F0;
+  color: white;
+}
+#Your-card .btn-update {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: black;
+  font-weight: 700;
+  padding: 16px 40px;
+  display: inline-block;
+  transition: 0.5s;
+}
+#Your-card .btn-update:hover {
+  transform: scale(1.1);
+  background-color: #3577F0;
+  color: white;
+}
+#Your-card .btn-check1 {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: black;
+  font-weight: 700;
+  padding: 16px 40px;
+  display: inline-block;
+  color: white;
+  transition: 0.5s;
+  background-color: #3577F0;
+}
+#Your-card .btn-check1:hover {
+  transform: scale(1.1);
+}
+#Your-card .order {
+  background-color: #F9F3F0;
+  padding: 20px;
+  border-radius: 8px;
+}/*# sourceMappingURL=basket.css.map */

@@ -1,6 +1,6 @@
 $('.slider1').slick({
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -10,7 +10,7 @@ $('.slider1').slick({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 3,
-          infinite: true,
+          infinite: true, 
           dots: true
         }
       },
@@ -364,3 +364,70 @@ btn.on('click', function(e) {
   
   var deadline = new Date(Date.parse(new Date()) + 01 * 24 * 60 * 60 * 1000);
   initializeClock('clockdiv-p', deadline);
+/////
+
+
+
+
+
+
+  let cards = document.querySelectorAll(".card");
+
+  let idCounter = 1;
+
+  cards.forEach(card => {
+    card.setAttribute('id',`${idCounter}`)
+    idCounter++;
+  })
+
+  localStorage.setItem('product',JSON.stringify([]));  
+
+
+  function GetProduct() {
+
+    let product = JSON.parse(localStorage.getItem('product'));
+
+    let add = document.querySelectorAll(".add");
+
+    add.forEach(addbtn => {
+      addbtn.onclick = function(e) {
+        e.preventDefault();
+
+        let productimg = this.parentElement.parentElement.parentElement.children[0].src;
+        let  productName = this.parentElement.parentElement.parentElement.parentElement.children[2].children[0].innerHTML;
+        let productPrice = this.parentElement.parentElement.parentElement.parentElement.children[2].children[1].children[1].innerHTML;
+        let productId = this.parentElement.parentElement.parentElement.parentElement.id
+        console.log(productId);
+
+
+        let existproduct = product.find(meh => meh.Id===productId);
+
+        if(existproduct===undefined){
+
+          product.push({
+            Id:productId,
+            Img:productimg,
+            Name:productName,
+            Price:productPrice,
+            Count:1
+  
+           })
+        }
+        else{
+          existproduct.Count+=1;
+        }
+
+        localStorage.setItem('product',JSON.stringify(product));
+
+      }
+    })
+
+  }
+
+  function CountProduct() {
+    let product = JSON.parse(localStorage.getItem('product'));
+    document.getElementById('count').innerHTML = product.length
+}
+CountProduct()
+  
+  GetProduct();
