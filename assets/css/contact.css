@@ -1,0 +1,74 @@
+.vandam iframe {
+  width: 100%;
+}
+
+#Contact h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+#Contact p {
+  width: 80%;
+  margin-bottom: 45px;
+  color: #777796;
+}
+#Contact .form1 {
+  margin-bottom: 30px;
+  position: relative;
+}
+#Contact .form1 label {
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  pointer-events: none;
+  z-index: 4;
+  background: #fff;
+  padding: 0 10px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+#Contact .form1 input {
+  width: 100%;
+  height: 60px;
+  border-radius: 6px;
+  padding: 0 20px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid rgba(156, 156, 156, 0.634);
+}
+#Contact .form1 textarea {
+  min-height: 160px;
+  border: 1px solid rgba(156, 156, 156, 0.634);
+  border-radius: 6px;
+  resize: none;
+  padding: 15px;
+  outline: none;
+  background-color: #fff;
+  width: 100%;
+  line-height: 1.5;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+#Contact .location h4 {
+  margin-bottom: 20px;
+  margin-top: 35px;
+  font-weight: 500;
+}
+#Contact .location span {
+  margin-bottom: 15px;
+  display: block;
+  color: #777796;
+}
+#Contact .btn-send {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: 700;
+  padding: 16px 70px;
+  display: inline-block;
+  transition: 0.5s;
+}
+#Contact .btn-send:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=contact.css.map */
