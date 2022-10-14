@@ -697,7 +697,54 @@ header {
         }
     }
 
+    .quick{
+        position: absolute;
+        z-index: 2;
+        padding: 0 20px !important;
+       width: 203px;
+       
+     
+       ul{
+        span{
+            font-size: 13px;
+            opacity: .8;
+        }
+       }
+        li{
+            list-style: none;
+            border-bottom:1px solid #2929301c;
+            padding-top: 10px !important;
 
+        }
+        .reg{
+            font-size: 10px;
+            padding-bottom: 15px;
+        }
+    }
+    
+
+    .btn-login{
+       
+        border-radius: 6px;
+        border: 1px solid transparent;
+        color: black;
+        padding: 10px 0;
+        font-weight: 700;
+        background-color: #3577F0;
+        a{
+            color: white;
+
+        }
+        display: inline-block;
+        transition: .5s;
+       width: 100%;
+       &:hover{
+        transform: scale(1.1);
+        
+        
+       }
+    
+    }
 
 
 

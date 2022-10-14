@@ -549,6 +549,44 @@ header #searchicon {
   justify-items: flex-start;
 }
 
+.quick {
+  position: absolute;
+  z-index: 2;
+  padding: 0 20px !important;
+  width: 203px;
+}
+.quick ul span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+.quick li {
+  list-style: none;
+  border-bottom: 1px solid rgba(41, 41, 48, 0.1098039216);
+  padding-top: 10px !important;
+}
+.quick .reg {
+  font-size: 10px;
+  padding-bottom: 15px;
+}
+
+.btn-login {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: black;
+  padding: 10px 0;
+  font-weight: 700;
+  background-color: #3577F0;
+  display: inline-block;
+  transition: 0.5s;
+  width: 100%;
+}
+.btn-login a {
+  color: white;
+}
+.btn-login:hover {
+  transform: scale(1.1);
+}
+
 .etrade {
   padding: 100px 107px 85px;
   border-radius: 6px;

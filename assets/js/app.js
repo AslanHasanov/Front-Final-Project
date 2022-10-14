@@ -380,7 +380,11 @@ btn.on('click', function(e) {
     idCounter++;
   })
 
-  localStorage.setItem('product',JSON.stringify([]));  
+  if(localStorage.getItem('product') ===null ){
+
+    localStorage.setItem('product',JSON.stringify([]));  
+
+  }
 
 
   function GetProduct() {
@@ -419,15 +423,36 @@ btn.on('click', function(e) {
 
         localStorage.setItem('product',JSON.stringify(product));
 
+        CountProduct();
       }
     })
-
+    
   }
 
   function CountProduct() {
+    
     let product = JSON.parse(localStorage.getItem('product'));
-    document.getElementById('count').innerHTML = product.length
+
+    let span = document.getElementById('count');
+    span.innerHTML = product.length
+
+    
 }
-CountProduct()
+CountProduct();
+
+GetProduct();
   
-  GetProduct();
+
+
+function LogHide(){
+  $(".quick").hide()
+}
+LogHide()
+
+
+
+$(document).ready(function(){
+  $(".p1").click(function(){
+    $(".quick").slideToggle();
+  });
+});
