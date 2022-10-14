@@ -111,4 +111,22 @@ header {
   background-color: #F9F3F0;
   padding: 20px;
   border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+  table thead .title {
+    display: none;
+  }
+  table thead th {
+    font-size: 13px;
+    margin: 0px !important;
+    padding: 0 !important;
+  }
+  .update-center {
+    flex-direction: column;
+  }
+  .update-center .update-card {
+    text-align: start !important;
+    margin-top: 25px;
+  }
 }/*# sourceMappingURL=basket.css.map */

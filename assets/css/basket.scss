@@ -1,40 +1,46 @@
-header{
+header {
     position: sticky;
     z-index: 9;
     top: 0;
     background-color: #fff;
 }
 
-#Your-card{
-    .table{
-        
-        thead{
+#Your-card {
+    .table {
+
+        thead {
             background-color: #F6F7FB;
-            tr{
-                
-                .title{
+
+            tr {
+
+                .title {
                     padding: 18px 15px !important;
                 }
-                th{
-                    
+
+                th {
+
                     font-size: 20px;
                     padding: 18px 15px;
                     font-weight: 500;
                 }
             }
         }
-        tbody{
+
+        tbody {
             align-items: center;
-            i{
+
+            i {
                 cursor: pointer;
             }
-            td{
+
+            td {
                 padding-top: 30px;
             }
-            .photo{
+
+            .photo {
                 padding: 0 !important;
 
-                img{
+                img {
                     border-radius: 10px;
                     height: 80px;
                     width: 80px;
@@ -43,7 +49,7 @@ header{
                 }
             }
 
-            .quantity-input{
+            .quantity-input {
                 width: 43px;
                 text-align: center;
                 border: 1px solid black;
@@ -57,8 +63,9 @@ header{
             }
         }
     }
-    .quant{
-        i{
+
+    .quant {
+        i {
             padding: 15px;
             text-align: center;
             border: none;
@@ -68,8 +75,8 @@ header{
         }
     }
 
-    .cupon{
-        input{
+    .cupon {
+        input {
             width: 100%;
             padding: 0;
             border-bottom: 2px solid #efefef !important;
@@ -78,8 +85,9 @@ header{
             border-radius: 0;
         }
     }
-    .btn-apply{
-       
+
+    .btn-apply {
+
         border-radius: 6px;
         border: 1px solid transparent;
         color: black;
@@ -87,16 +95,17 @@ header{
         padding: 16px 40px;
         display: inline-block;
         transition: .5s;
-       
-       &:hover{
-        transform: scale(1.1);
-        background-color: #3577F0;
-        color: white;
-       }
-    
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: #3577F0;
+            color: white;
+        }
+
     }
-    .btn-update{
-       
+
+    .btn-update {
+
         border-radius: 6px;
         border: 1px solid transparent;
         color: black;
@@ -104,16 +113,17 @@ header{
         padding: 16px 40px;
         display: inline-block;
         transition: .5s;
-       
-       &:hover{
-        transform: scale(1.1);
-        background-color: #3577F0;
-        color: white;
-       }
-    
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: #3577F0;
+            color: white;
+        }
+
     }
-    .btn-check1{
-       width: 100%;
+
+    .btn-check1 {
+        width: 100%;
         border-radius: 6px;
         border: 1px solid transparent;
         color: black;
@@ -123,15 +133,43 @@ header{
         color: white;
         transition: .5s;
         background-color: #3577F0;
-       &:hover{
-        transform: scale(1.1);
-        
-       }
-    
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+
     }
-    .order{
+
+    .order {
         background-color: #F9F3F0;
-       padding: 20px;
-       border-radius: 8px;
+        padding: 20px;
+        border-radius: 8px;
     }
+}
+
+@media (max-width:576px) {
+    table {
+        thead {
+            .title{
+                display: none;
+            }
+            .quantity{
+                
+            }
+            th {
+                font-size: 13px;
+                margin: 0px !important;
+                padding: 0 !important;
+            }
+        }
+    }
+.update-center{
+    flex-direction: column;
+    .update-card{
+        text-align: start !important;
+        margin-top: 25px;
+    }
+    
+}
 }

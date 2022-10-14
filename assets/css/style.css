@@ -83,6 +83,11 @@ header #searchicon {
   transition: 0.7s;
   z-index: 5;
 }
+#slidebar li {
+  list-style: none;
+  margin-top: 5px;
+  color: black;
+}
 #slidebar .x {
   margin-left: 4rem;
 }
@@ -91,14 +96,34 @@ header #searchicon {
 }
 #slidebar a {
   margin-left: 1rem;
+  color: #292930;
+  opacity: 0.8;
 }
 #slidebar i {
   margin-right: 1rem;
 }
 
+#toaster {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
 #category-slidebar {
   visibility: hidden;
   opacity: 0;
+}
+#category-slidebar img {
+  width: 10%;
+}
+#category-slidebar .box {
+  border: none !important;
+}
+#category-slidebar .box a {
+  padding-left: 10px;
+  opacity: 0.8;
 }
 
 .active-cat-sbar {

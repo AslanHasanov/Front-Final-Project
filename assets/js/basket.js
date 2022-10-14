@@ -168,7 +168,66 @@ removers.forEach(rm => {
     totalSub = 0;
 })
 
+function LogHide() {
+    $(".quick").hide()
+  }
+  LogHide()
+  $(document).ready(function () {
+    $(".p1").click(function () {
+      $(".quick").slideToggle();
+    });
+  });
+  
+  
+  
+  function menuHide() {
+    let menus = document.querySelectorAll(".nbm")
+    menus.forEach(m => {
+      $(m).hide()
+    })
+  }
 
+
+
+  var menu = document.querySelector("#bars")
+var slidebar = document.querySelector("#slidebar")
+var exit = document.querySelector('#bars-exit')
+
+exit.addEventListener("click", function () {
+  slidebar.style.width = "0%"
+})
+
+menu.addEventListener("click", function (e) {
+  e.preventDefault()
+
+  if (slidebar.style.width === "70%") {
+    slidebar.style.width = "0%"
+  }
+  else {
+    slidebar.style.width = "70%"
+  }
+})
+
+
+
+  
+  menuHide()
+  
+  
+  
+  $(".boxh").click(function () {
+    $("#pdrop-menuh").slideToggle()
+  });
+  
+  $(".boxs").click(function () {
+    $("#pdrop-menus").slideToggle()
+  });
+  $(".boxp").click(function () {
+    $("#pdrop-menup").slideToggle()
+  });
+  $(".boxb").click(function () {
+    $("#pdrop-menub").slideToggle()
+  });
 
 
 // let inputs=document.querySelectorAll("#inp")
