@@ -120,14 +120,9 @@ var catmenu = document.querySelector("#depart-category")
 var catslide = document.querySelector("#category-slidebar")
 var catexit = document.querySelector('#cat-exit')
 
-catexit.addEventListener("click", function () {
-  catslide.classList.remove('active-cat-sbar')
 
-})
 
-catmenu.addEventListener("click", function () {
-  catslide.classList.add('active-cat-sbar');
-})
+
 
 
 menuHide()
@@ -148,6 +143,10 @@ $(".boxb").click(function () {
   $("#pdrop-menub").slideToggle()
 });
 
+
+
+
+
 $(document).ready(function() {
   $('.noUi-handle').on('click', function() {
     $(this).width(50);
@@ -159,7 +158,7 @@ $(document).ready(function() {
     prefix: '$'
   });
   noUiSlider.create(rangeSlider, {
-    start: [500000, 1000000],
+    start: [30, 5000],
     step: 1,
     range: {
       'min': [30],
@@ -2123,19 +2122,3 @@ $(document).ready(function() {
     /** @export */
   window.wNumb = wNumb;
 }());
-
-
-var btn = $('#button2');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
